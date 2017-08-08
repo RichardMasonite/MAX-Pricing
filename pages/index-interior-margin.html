@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link data-require="bootstrap@3.3.7" data-semver="3.3.7" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <script data-require="bootstrap@3.3.7" data-semver="3.3.7" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="sidebar_menu.css" />
+  <link rel="stylesheet" href="custom.css" />
+  <script src="https://use.fontawesome.com/1e577437ce.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+</head>
+
+<body>
+  <div id="wrapper" class="toggled-1">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav nav-stacked" id="menu">
+        <li>
+          <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span>Dashboard</a>
+        </li>
+        <li>
+          <a class="active" href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-calculator fa-stack-1x "></i></span>Calculator</a>
+        </li>
+        <li>
+          <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-rocket fa-stack-1x "></i></span>MAX</a>
+        </li>
+        <li>
+          <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-line-chart fa-stack-1x "></i></span>Analytics</a>
+        </li>
+        <li>
+          <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-envelope fa-stack-1x "></i></span>Contact</a>
+        </li>
+        <li>
+          <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-comments fa-stack-1x "></i></span>Chat</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+  </div>
+  <div id="wrapper1" class="toggled-2">
+    <nav class="navbar navbar-default no-margin">
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+
+          <li><a href="index-pricing-slab.html">Pricing</a></li>
+          <li class="active"><a href="index-margin.html">Margins</a></li>
+          <li><a href="#">Product</a></li>
+        </ul>
+        <!-- /.navbar-top-left -->
+        <a class="navbar-brand" href="index-portal.html"></a>
+        <ul class="nav navbar-nav navbar-right">
+          <li id="fat-menu" class="dropdown"> <a href="#" class="dropdown-toggle center" id="drop3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell-o"></i><sup><span class="badge">2</span></sup></a>
+            <ul class="dropdown-menu" aria-labelledby="drop3">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+          <li id="fat-menu" class="dropdown"> <a href="#" class="dropdown-toggle center" id="drop3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-o"></i></a>
+            <ul class="dropdown-menu" aria-labelledby="drop3">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- /.navbar-top-right -->
+      </div>
+      <!-- /.navbar-collapse -->
+
+    </nav>
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <div class="container-fluid xyz">
+        <div class="row">
+          <div class="col-lg-2 col-md-2 col-sm-4">
+            <label class="radio-inline">
+              <a href="index-margin.html"><input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Entry</a>
+            </label>
+            <label class="radio-inline">
+                <a href="index-interior-margin.html"><input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked="checked">Interior</a></label>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12 col-lg-offset-7 col-md-offset-8">
+            <div class="input-group margin-20">
+              <input type="text" class="form-control" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Go!</button>
+              </span>
+            </div>
+            <!-- /input-group -->
+          </div>
+          <!-- /.col-lg-3 -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-lg-11">
+                    <div class="col-lg-12 no-padding-lr">
+                      <p>Select Height:</p>
+                    </div>
+                    <div class="col-lg-1 no-padding-lr filter">
+                      <div class="form-group">
+                        <select class="form-control" id="sel1">
+                          <option>Height 78</option>
+                          <option>Height 80</option>
+                          <option>Height 84</option>
+                          <option>Height 96</option>
+                        </select>
+                      </div>
+                      <!--
+                      <button type="button" class="btn btn-default active">78</button>
+                      <button type="button" class="btn btn-default active">80</button>
+                      <button type="button" class="btn btn-default active">84</button>
+                      <button type="button" class="btn btn-default active">96</button>
+-->
+
+                    </div>
+
+                    <!-- /Filter -->
+                  </div>
+                  <!-- /.col-lg-4 -->
+                  <div class="col-lg-1">
+                    <div class="col-lg-12 no-padding-lr">
+                      <p>Items</p>
+                    </div>
+                    <div class="col-lg-12 no-padding-lr">
+                      <!-- Select -->
+                      <div class="form-group">
+                        <select class="form-control" id="sel1">
+                          <option>25</option>
+                          <option>50</option>
+                          <option>200</option>
+                          <option>500</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.col-lg-1 -->
+                </div>
+                <!-- Table -->
+                <table class="table table-striped table-bordered parent">
+                  <thead>
+                    <tr>
+                      <th nowrap="nowrap">Family</th>
+                      <th class="center extra-border" colspan="4">Door 1-3/8"</th>
+                      <th class="center extra-border" colspan="4">Door 1-3/4"</th>
+                      <th class="center extra-border" colspan="4">Bifold 1-3/8"</th>
+                      <th class="center" colspan="4">Bifold 1-3/8"</th>
+                    </tr>
+                    <tr>
+                      <th class="no-border-top"></th>
+                      <th class="subthead center">HC</th>
+                      <th class="subthead center">SC</th>
+                      <th class="subthead center">HCE</th>
+                      <th class="subthead extra-border center">SCE</th>
+                      <th class="subthead center">HC</th>
+                      <th class="subthead center">SC</th>
+                      <th class="subthead center">HCE</th>
+                      <th class="subthead extra-border center">SCE</th>
+                      <th class="subthead center">HC</th>
+                      <th class="subthead center">SC</th>
+                      <th class="subthead center">HCE</th>
+                      <th class="subthead extra-border center">SCE</th>
+                      <th class="subthead center">HC</th>
+                      <th class="subthead center">SC</th>
+                      <th class="subthead center">HCE</th>
+                      <th class="subthead center">SCE</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="no-bg">
+                      <td class="col-md-2" nowrap="nowrap"><strong>Molded Panel Doors</strong><button data-toggle="collapse" data-target="#MoldedPanelDoors" class="btn btn-default btn-xs pull-right"><span class="fa fa-caret-down"></span></button></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                      <td colspan="17" class="hiddenRow no-padding">
+                        <div class="accordian-body collapse" id="MoldedPanelDoors">
+                          <table class="table table-striped">
+                            <tbody>
+                              <tr class="accordion-toggle">
+                                <td class="col-md-2" nowrap="nowrap">Fiber Edge</td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                              </tr>
+
+                              <tr class="accordion-toggle">
+                                <td nowrap="nowrap">Wood Edge</td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="no-bg">
+                      <td class="col-md-2" nowrap="nowrap"><strong>Select/Anniversary Doors</strong><button data-toggle="collapse" data-target="#AnniversaryDoors" class="btn btn-default btn-xs pull-right"><span class="fa fa-caret-down"></span></button></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                      <td colspan="17" class="hiddenRow no-padding">
+                        <div class="accordian-body collapse" id="AnniversaryDoors">
+                          <table class="table table-striped">
+                            <tbody>
+                              <tr class="accordion-toggle">
+                                <td class="col-md-2" nowrap="nowrap">Fiber Edge</td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                              </tr>
+
+                              <tr class="accordion-toggle">
+                                <td nowrap="nowrap">Wood Edge</td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="no-bg">
+                      <td class="col-md-2" nowrap="nowrap"><strong>Heritage Doors</strong><button data-toggle="collapse" data-target="#HeritageDoors" class="btn btn-default btn-xs pull-right"><span class="fa fa-caret-down"></span></button></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                      <td colspan="17" class="hiddenRow no-padding">
+                        <div class="accordian-body collapse" id="HeritageDoors">
+                          <table class="table table-striped">
+                            <tbody>
+                              <tr class="accordion-toggle">
+                                <td class="col-md-2" nowrap="nowrap">Fiber Edge</td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                              </tr>
+
+                              <tr class="accordion-toggle">
+                                <td nowrap="nowrap">Wood Edge</td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="no-bg">
+                      <td class="col-md-2" nowrap="nowrap"><strong>West End Doors</strong><button data-toggle="collapse" data-target="#WestEndDoors" class="btn btn-default btn-xs pull-right"><span class="fa fa-caret-down"></span></button></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+
+                    </tr>
+                    <tr>
+                      <td colspan="17" class="hiddenRow no-padding">
+                        <div class="accordian-body collapse" id="WestEndDoors">
+                          <table class="table table-striped">
+                            <tbody>
+                              <tr class="accordion-toggle">
+                                <td class="col-md-2" nowrap="nowrap">Fiber Edge</td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                              </tr>
+
+                              <tr class="accordion-toggle">
+                                <td nowrap="nowrap">Wood Edge</td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="no-bg">
+                      <td class="col-md-2" nowrap="nowrap"><strong>Palazzo Doors</strong><button data-toggle="collapse" data-target="#PalazzoDoors" class="btn btn-default btn-xs pull-right"><span class="fa fa-caret-down"></span></button></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+
+                    </tr>
+                    <tr>
+                      <td colspan="17" class="hiddenRow no-padding">
+                        <div class="accordian-body collapse" id="PalazzoDoors">
+                          <table class="table table-striped">
+                            <tbody>
+                              <tr class="accordion-toggle">
+                                <td class="col-md-2" nowrap="nowrap">Fiber Edge</td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                              </tr>
+
+                              <tr class="accordion-toggle">
+                                <td nowrap="nowrap">Wood Edge</td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="no-bg">
+                      <td class="col-md-2" nowrap="nowrap"><strong>Wood Veneered Flush Doors</strong><button data-toggle="collapse" data-target="#WoodVeneeredFlushDoors" class="btn btn-default btn-xs pull-right"><span class="fa fa-caret-down"></span></button></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+
+                    </tr>
+                    <tr>
+                      <td colspan="17" class="hiddenRow no-padding">
+                        <div class="accordian-body collapse" id="WoodVeneeredFlushDoors">
+                          <table class="table table-striped">
+                            <tbody>
+                              <tr class="accordion-toggle">
+                                <td class="col-md-2" nowrap="nowrap">Fiber Edge</td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                              </tr>
+
+                              <tr class="accordion-toggle">
+                                <td nowrap="nowrap">Wood Edge</td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="no-bg">
+                      <td class="col-md-2" nowrap="nowrap"><strong>Hardboard Flush Doors</strong><button data-toggle="collapse" data-target="#HardboardFlushDoors" class="btn btn-default btn-xs pull-right"><span class="fa fa-caret-down"></span></button></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+
+                    </tr>
+                    <tr>
+                      <td colspan="17" class="hiddenRow no-padding">
+                        <div class="accordian-body collapse" id="HardboardFlushDoors">
+                          <table class="table table-striped">
+                            <tbody>
+                              <tr class="accordion-toggle">
+                                <td class="col-md-2" nowrap="nowrap">Fiber Edge</td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                              </tr>
+
+                              <tr class="accordion-toggle">
+                                <td nowrap="nowrap">Wood Edge</td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="no-bg">
+                      <td class="col-md-2" nowrap="nowrap"><strong>Legacy Flush</strong><button data-toggle="collapse" data-target="#LegacyFlush" class="btn btn-default btn-xs pull-right"><span class="fa fa-caret-down"></span></button></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                      <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+
+                    </tr>
+                    <tr>
+                      <td colspan="17" class="hiddenRow no-padding">
+                        <div class="accordian-body collapse" id="LegacyFlush">
+                          <table class="table table-striped">
+                            <tbody>
+                              <tr class="accordion-toggle">
+                                <td class="col-md-2" nowrap="nowrap">Fiber Edge</td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                              </tr>
+
+                              <tr class="accordion-toggle">
+                                <td nowrap="nowrap">Wood Edge</td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="extra-border center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                                <td class="center"><i class="fa fa-minus-square-o" aria-hidden="true"></i> 40% <i class="fa fa-plus-square-o" aria-hidden="true"></i></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="pull-right">
+                  <button type="button" class="btn btn-primary">Edit</button>
+                  <button type="button" class="btn btn-danger">Cancel</button>
+                  <button type="button" class="btn btn-success">Save</button>
+                </div>
+              </div>
+            </div>
+            <!-- /.panel -->
+          </div>
+          <!-- /.col-lg-12 -->
+        </div>
+        <div class="row">
+          <div class="col-lg-12 center">
+            <nav aria-label="Page navigation">
+              <ul class="pagination">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /.row slab -->
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+  </div>
+  <!-- /#wrapper -->
+
+  <script src="sidebar_menu.js"></script>
+</body>
+
+</html>
